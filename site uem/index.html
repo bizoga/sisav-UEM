@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - UEM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="title">Secretaria Acadêmica Virtual</h1>
+        <form action="login.php" method="POST">
+            <label for="username">Usuário:</label>
+            <input id="username" type="text" name="username" placeholder="Digite seu usuário" required />
+
+            <label for="password">Senha:</label>
+            <input id="password" type="password" name="password" placeholder="Digite sua senha" required />
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="forgot-password">
+            Esqueceu sua senha? <a href="reset-password.php">Clique aqui</a>
+        </p>
+    </div>
+</body>
+</html>
+<!-- Adicionando a logo da UEM -->
+<div class="logo-container">
+    <img src="images/logo_uem.jpg" alt="Logo da UEM" class="logo">
+</div>

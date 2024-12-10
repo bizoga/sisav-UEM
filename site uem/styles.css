@@ -1,0 +1,114 @@
+/* Estilo global */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #5a9e5e, #b0d9a5); /* Ajustado para o gradiente perfeito */
+    background-size: 400% 400%; /* Efeito de movimento suave */
+    animation: gradient-animation 10s ease infinite; /* Animação de transição de cores */
+}
+
+/* Animação para o gradiente de fundo */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Estilo do contêiner de login */
+.login-container {
+    width: 420px;
+    padding: 25px 35px; /* Maior padding para aumentar o conforto */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo mais opaco para destacar */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    border: 1px solid #9c9c9c; /* Leve borda cinza */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Sombra mais suave e ampla */
+    text-align: center;
+    backdrop-filter: blur(5px); /* Desfoque para dar um efeito de vidro */
+}
+
+/* Estilo do título */
+.title {
+    font-size: 22px;
+    color: #333; /* Cor mais neutra para o título */
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+/* Estilo dos campos de input */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #b0b0b0; /* Borda mais suave */
+    border-radius: 8px; /* Arredondamento mais suave */
+    font-size: 16px;
+    background-color: #f4f4f4; /* Fundo claro para os campos */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15); /* Efeito de profundidade */
+}
+
+/* Botão de login */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5a9e5e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #4a8d4a; /* Tom mais escuro quando passar o mouse */
+}
+
+/* Estilo do texto 'Esqueceu a senha' */
+.forgot-password {
+    font-size: 14px;
+    color: #333;
+    margin-top: 12px;
+}
+
+.forgot-password a {
+    color: #007bff; /* Azul mais intenso */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.forgot-password a:hover {
+    color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+/* Estilo para a logo */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 120px; /* Ajuste conforme o tamanho da logo */
+    height: auto;
+    margin-bottom: 20px;
+}
